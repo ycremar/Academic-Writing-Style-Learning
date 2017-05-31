@@ -99,7 +99,7 @@ def discriminator_LSTM(paragraph, reuse=False):
 		outputs, states = tf.contrib.rnn.static_rnn(lstm_cells, par, dtype=tf.float32)
 		out = outputs[-1]
 		logit = ly.fully_connected(out, 1, activation_fn=None)
-	return out
+	return logit
 
 def build_graph():
 	noise_dist = tf.contrib.distributions.Normal(0., 1.)
