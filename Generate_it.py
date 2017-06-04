@@ -11,6 +11,7 @@ is_svhn = True
 channel = 3 if is_svhn is True else 1
 ckpt_dir = './ckpt_wgan'
 
+# Import paragraph to get size and create dictionary
 def read_data(fname):
     with open(fname) as f:
         content = f.readlines()
