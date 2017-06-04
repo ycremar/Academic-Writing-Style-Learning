@@ -17,7 +17,7 @@ learning_rate_ger = 5e-5
 learning_rate_dis = 5e-5
 
 # numbers of words in you generated paragraph
-sent_len = 50
+sent_len = 100
 n_hidden = 128
 
 # Import data for training discriminator
